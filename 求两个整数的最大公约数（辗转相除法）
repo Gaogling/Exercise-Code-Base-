@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+   int m=0;
+   int n=0;
+   scanf("%d %d",&m,&n);
+   while(m%n)
+   {
+     int c=m%n;
+      m=n;
+      n=c;
+   }
+   printf("最大公约数为：%d\n",n);
+   return 0;
+}
